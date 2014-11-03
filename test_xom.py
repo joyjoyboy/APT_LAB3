@@ -3,13 +3,13 @@ from unittest import TestCase
 from mock import patch
 
 import json
-import yahoo_options_data
+import test.yahoo_options_data
 
-computedJson = yahoo_options_data.contractAsJson("xom.dat")
+computedJson = test.yahoo_options_data.contractAsJson("xom.dat")
 expectedJson = open("xom.json").read()
 expectedJson_changed = open("xom_change.json").read()
 
-class Test(TestCase):
+class StandAloneTests(TestCase):
     @patch('__builtin__.open')
     def test(self, mockOpen):
         mockOpen.return_value.read.return_value = 'xom.dat'
