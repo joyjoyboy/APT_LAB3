@@ -1,5 +1,15 @@
+#!/usr/bin/env python
+from unittest import TestCase
+from mock import patch
+
 import json
 import yahoo_options_data
+
+class Test(TestCase):
+    @patch('__builtin__.open')
+    def test(self, mockOpen):
+        mockOpen.return_value.read.return_value = 'aapl.dat'
+        self.assertTrue(json.loads(computedJson) == json.loads(expectedJson) or json.loads(computedJson) == json.loads(expectedJson_change))
 
 computedJson = yahoo_options_data.contractAsJson("aapl.dat")
 expectedJson = open("aapl.json").read()
