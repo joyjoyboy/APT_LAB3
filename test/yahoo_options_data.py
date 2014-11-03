@@ -6,6 +6,21 @@ import urllib
 from bs4 import BeautifulSoup
 
 def functionNotUsed(input):
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
+	print "a"
 	pass
 
 def contractAsJson(filename):
