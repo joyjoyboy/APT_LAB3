@@ -1,2 +1,3 @@
 nosetests --with-xunit --all-modules --traverse-namespace --with-coverage --cover-package=test --cover-inclusive
 python -m coverage xml --include=test*
+pylint -r n test

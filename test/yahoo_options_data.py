@@ -5,6 +5,9 @@ import urllib
 
 from bs4 import BeautifulSoup
 
+def functionNotUsed(input):
+	pass
+
 def contractAsJson(filename):
 
 	jsonQuoteData = {
