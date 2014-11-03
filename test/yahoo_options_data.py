@@ -23,6 +23,9 @@ def functionNotUsed(input):
 	print "a"
 	pass
 
+assert False
+#assert True
+
 def contractAsJson(filename):
 
 	jsonQuoteData = {
