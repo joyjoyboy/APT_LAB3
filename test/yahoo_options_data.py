@@ -5,27 +5,6 @@ import urllib
 
 from bs4 import BeautifulSoup
 
-def functionNotUsed(input):
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	print "a"
-	pass
-
-assert False
-#assert True
-
 def contractAsJson(filename):
 
 	jsonQuoteData = {
